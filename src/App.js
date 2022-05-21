@@ -17,15 +17,15 @@ function App() {
   const classes = useStyles();
   return (
     <BrowserRouter>
-    <ContextProvider>
-        <div className={classes.app}>
-          <Routes>
-            <Route path='/' element={<Home/>} ></Route>
-            <Route path='/coins/:id' element={<Coin/>} ></Route>
-          </Routes>
-        </div>
-      
-    </ContextProvider>
+      <ContextProvider>
+          <div className={classes.app}>
+            <Routes>
+              <Route path='/' element={<Home/>} ></Route>
+              <Route path='/coins/:id' element={<Coin/>} ></Route>
+            </Routes>
+          </div>
+        
+      </ContextProvider>
     </BrowserRouter>
     
   );
